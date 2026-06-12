@@ -1,0 +1,18 @@
+{
+  "name": "bedrock-rag-app",
+  "version": "1.0.0",
+  "description": "Node.js + Express app with a simple chat UI for RAG using AWS Bedrock Knowledge Bases",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agent-runtime": "^3.600.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.1066.0",
+    "@pinecone-database/pinecone": "^7.2.0",
+    "express": "^4.19.2",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5"
+  }
+}
