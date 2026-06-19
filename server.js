@@ -7,11 +7,13 @@ const {
 
 const config = require("./config");
 const pdfRoutes = require("./pdfRoutes");
+const evalRoutes = require("./evalRoutes");
 
 const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/api/pdf", pdfRoutes);
+app.use("/api/eval", evalRoutes);
 
 const client = new BedrockAgentRuntimeClient({
   region: config.region,
